@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Coercion</title>
+    <script src="./JS/main.js"></script>
+</head>
+<body>
+
+<!-- ALL ELEMENTS AFTER "string" ARE ON-CLICK -->
+
+    <!--NaN-->
+    <p id="NaN_Test" onclick="not_Number()">Not a Number</p>
+
+    <!--isNaN-->
+    <p id="isNaN_Test" onclick="isnot_Number()">"Hello" is not a number</p>
+    
+    <!--infinity-->
+    <p id="Infinity" onclick="pos_Infinity()">Positive infinite number</p>
+
+    <!--Negative infinity-->
+    <p id="NegInfinity" onclick="neg_Infinity()">Negative infinite number</p>
+
+    <!--Boolean-->
+    <p id="Boole" onclick="grtr_Than()">2 is greater than 1</p>
+
+    <!--Tripple equals-->
+    <p id="Threeqs" onclick="three_Eqs()">X and W have the same value</p>
+
+    <!-------------Logic operators----------------->
+
+    <!--&&-->
+    <p id="&&Logix" onclick="and()">&& Operator</p>
+
+    <!--||-->
+    <p id="||Logix" onclick="or()">|| Operator</p>
+
+    <!--!-->
+    <p id="!Logix" onclick="not()">! Operator</p>
+
+    
+</body>
+</html>
