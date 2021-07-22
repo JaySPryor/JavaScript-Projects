@@ -46,3 +46,13 @@ function timeFunc() {
     }
     document.getElementById("dayTime").innerHTML = Reply;
 }
+
+//concat() method
+function oneSentence() {
+    var part1 = "I've ";
+    var part2 = "made this ";
+    var part3 = "into a complete ";
+    var part4 = "sentence.";
+    var wholeSentence = part1.concat(part2,part3,part4);
+    document.getElementById("Concat").innerHTML = wholeSentence;
+}
