@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Slideshow & Countdown Timer</title>
+    <script src="JS/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+</head>
+<body>
+
+    <!--Container for slideshow-->
+    <div class="slideshow-container">
+
+        <!--Full width images w/ pic# and caption-->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="IMAGES/corgi.jpg" style="width: 100%" alt="Corgi">
+            <div class="text">Welsh Corgi</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="IMAGES/pug.jpg" style="width: 100%" alt="Pug">
+            <div class="text">Pug</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="IMAGES/shiba.jpg" style="width: 100%" alt="Shiba Inu">
+            <div class="text">Shiba Inu</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="IMAGES/wawa.jpg" style="width: 100%" alt="Chihuahua">
+            <div class="text">Chihuahua</div>
+        </div>
+
+        <!--Next/Previous buttons-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!--Dots & Circles-->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <!-- Hidden countdown timer
+    <p> How many seconds would you like to set your alarm for?</p>
+    <input id="seconds" value="" />
+    <button onclick="countdown()">Click Here</button>
+    <p id="timer"></p>
+    -->
+    
+</body>
+</html>
