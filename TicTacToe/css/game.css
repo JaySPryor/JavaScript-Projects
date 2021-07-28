@@ -1,0 +1,45 @@
+/***** CSS FOR TICTACTOE ******/
+
+/*Table & Canvas container*/
+.center-container {
+    /*container width*/
+    width: 608px;
+    /*container centering*/
+    margin: 0 auto;
+    /*50px from top*/
+    margin-top: 50px;
+}
+
+table {
+    /*collapse table border into 1 border*/
+    border-collapse: collapse;
+    /*hides outer borders*/
+    border-style: hidden;
+}
+
+td {
+    /*cursor to pointer when hover of td elements*/
+    cursor: pointer;
+    /*table border style*/
+    border: 4px solid rgba(73, 188, 255, 0.8);
+    /*removes default padding*/
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+}
+
+canvas {
+    /*sets canvas position to top left corner of container*/
+    position: absolute;
+    /*places canvas over top of table*/
+    z-index: 10;
+    /*makes canvas invisible*/
+    pointer-events: none;
+}
+
+/* h1 styles */
+h1 {
+    text-align: center;
+    color: sandybrown;
+    text-decoration: underline;
+}
