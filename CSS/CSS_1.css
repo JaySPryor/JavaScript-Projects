@@ -1,0 +1,77 @@
+/********CSS FOR CONTACT FORM*********/
+
+/*Heading Style*/
+h2 {
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+}
+
+/*Form style*/
+.contact form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #818181;
+    padding: 12px 12px;
+    width: 70%;
+    border: 1px solid #808080;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: rgb(197, 197, 197);
+    box-shadow: 2px 3px 3px 0px rgba(0,0,0,.3);
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Input style*/
+.contact input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8d8e8f;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #09080d;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #09080d;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: #e7e7e7;
+    box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,.15);
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact input[type="text"] {
+    box-shadow: 0 0 18px rgba(121, 121, 121, 0.8);
+}
+
+/*Submit Button*/
+.submit input {
+    color: rgb(225, 225, 225);
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 3%;
+    padding: 7px 0px;
+    width: 25%;
+    font-size: 18px;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border-radius: 7px;
+    background-color: #797a7b;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.3);
+}
+
+/* Button Hover controls */
+.submit input[type="submit"]:hover {
+    color: rgb(100, 100, 100);
+    background-color: #8d8e8f;
+    box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,.3);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+    <script src="JavaScript/JavaScript_1.js" defer></script>
+</head>
+<body>
+
+    <!--Switch Statement (returns favorite color and custom text)-->
+    <h1>What's your favorite color?</h1>
+    <h3>Pick from the list:</h3>
+    <ul>
+        <li>Red</li>
+        <li>Yellow</li>
+        <li>Green</li>
+        <li>Blue</li>
+        <li>Pink</li>
+        <li>Purple</li>
+    </ul>
+    <h3>Enter your choice below:</h3>
+
+    <input id="colorInput" type="text">
+    <button onclick="colorFunc()">Submit Color</button>
+    <p id="switchDemo"></p>
+    <br>
+    <h1> . . . </h1>
+    <br>
+
+    <!--Get by class name method-->
+    <h1 class="Click">This text will change!</h1>
+    <h3 class="Click">This text will <b>not</b> change.</h3>
+    <button onclick="classNameDemo()">Click Here</button>
+    <br>
+    <br>
+
+    <!--Canvases w/ border-->
+    <canvas id="firstCanvas" width="200" height="200" style="border: 3px solid black;"></canvas><br>
+    <button onclick="firstCanvas()">Click to Draw a Line</button><br><br>
+
+    <canvas id="secondCanvas" width="200" height="200" style="border: 3px double red;"></canvas><br>
+    <button onclick="secondCanvas()">Click to Draw a Circle</button><br><br>
+
+    <canvas id="thirdCanvas" width="200" height="200" style="border: 3px dotted blue;"></canvas><br>
+    <button onclick="thirdCanvas()">Click to Draw Text</button><br><br>
+
+    <canvas id="fourthCanvas" width="200" height="200" style="border: 3px solid #444;"></canvas><br>
+    <button onclick="fourthCanvas()">Click to Draw a Linear Gradient</button><br><br>
+    
+</body>
+</html>
