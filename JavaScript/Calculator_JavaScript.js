@@ -27,6 +27,17 @@ function Input_Digit(digit) {
     }
 }
 
+//This section handles decimal points
+function Input_Decimal(dot) {
+    //This makes sure an acidental . click doesn't cause bugs.
+    if (Calculator.Wait_Second_Operand === true) return;
+    if (!Calculator.Display_Value.includes(dot)) {
+        //We are saying Display_Value does not contain a decimal point,
+        // then we want to add one.
+        Calculator.Display_Value += dot;
+    }
+}
+
 // ******* SECTION FOR HANDLING OPERATORS *********
 function Handle_Operator(Next_Operator) {
     const { First_Operand, Display_Value, operator } = Calculator
