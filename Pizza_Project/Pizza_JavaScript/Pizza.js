@@ -1,6 +1,6 @@
 /*********JAVASCRIPT FOR PIZZA PROJECT*************/
 
-//
+//Generates Receipt log in console & visual list/Price of order on screen.
 function getReceipt() {
     //Initialized our string to get passed from function
     // to function, grows line by line to full receipt
