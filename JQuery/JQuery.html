@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+
+<script>
+//jquery function, executed when the document is finished loading (ready).
+$(document).ready(function() {
+    //targets html element, places written code in document.
+    $('html').append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'>Paragraph 1</p>\
+                    <p id='2'>Paragraph 2</p>\
+                    <p id='3'>Paragraph 3</p>\
+                </div>\
+            </div>\
+        </body>"
+    );
+
+    //Sets id='2' color to red.
+    $("#2").css({"color":"red"});
+    
+    //Hides id='3' when clicked.
+    $("#3").click(function() {
+        $('h1').hide();
+    });
+
+    //(EVENT)Logs message to console on click.
+    $("#1").click(function() {
+        console.log("You found me!");
+    });
+
+    //(EFFECT)Slowly fades id='2' to 1/2 opacity when clicked.
+    $("#2").click(function() {
+        $( this ).fadeTo("slow", 0.55 );
+    });
+});
+
+</script>
+    
+</body>
+</html>
