@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up counter</title>
+    <script src="./react.js"></script>
+    <script src="./react-dom.js"></script>
+</head>
+<body>
+    
+    <!--Container for rendered timer-->
+    <div id="My_React_Code"></div>
+
+    <!--Javascript for timer-->
+    <script>
+        var Counter = React.createClass({ //Creates component classes.
+            render: function() {
+                //Rounds to .0 place.
+                var time_Passed = Math.round(this.props.time_Passed / 100);
+                //Displays (counts) remainder of second, displays '.0' if no remainder.
+                var seconds_Passed = time_Passed / 10 + (time_Passed % 10 ? '' : '.0' );//? checks whether condition is true. ":" = "else". "%" finds remainder.
+                //Variable for text & timer.
+                var text = 'My React code started running ' + seconds_Passed + ' seconds ago!';
+                //Displays 'text'.
+                return React.DOM.p(null, text);
+            }
+        });
+
+        //Creates fatory that makes 'Counter' objects. 
+        var counter_Factory = React.createFactory(Counter);//Function that generates a factory.
+
+
+        var start_Counting = new Date().getTime();
+
+        //setInterval() is a method that evaluates expression at specific intervals(milSeconds).
+        setInterval(function() {
+            ReactDOM.render( //Used to render a react Component(s).
+                counter_Factory({time_Passed: new Date().getTime() - start_Counting}),
+                document.getElementById('My_React_Code')
+            );
+        //Interval
+        }, 50);
+    </script>
+
+</body>
+</html>
