@@ -1,0 +1,47 @@
+/*******TO-DO APP CSS*************/
+
+/*Sets font and centers text within html.*/
+html {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: gray;
+}
+
+input {
+    padding-top: 30px;
+    width: 500px;
+    height: 60px;
+    font-size: 40px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+    input:focus {
+        outline: none;
+    }
+
+li {
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+    margin: 0;
+}
+
+/*Footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    color: rgb(77, 77, 77);
+    background-color: rgb(206, 206, 206);
+    border: 1px solid;
+    border-color: rgb(77, 77, 77);
+}
