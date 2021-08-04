@@ -17,9 +17,9 @@ A demo of a simple Tic-Tac-Toe game.
 ![Generic badge](https://img.shields.io/badge/JavaScript-<informational>.svg)
 
 
-## [Bootstrap4_Project](https://github.com/JaySPryor/HTML-and-CSS-Projects/tree/main/Bootstrap4_Project)
+## [Calculator_Project](https://github.com/JaySPryor/JavaScript-Projects/tree/main/Calculator_Project)
 ![Generic badge](https://img.shields.io/badge/This_project_received_a-PASS-<success>.svg)
-This page is an example home page for a Movie Theatre that is styled using Bootstrap4. It contains many Bootstrap components including a navbar, jumbotron, form, cards, and dropdowns.
+A demo of a working basic calulator.
 ![Generic badge](https://img.shields.io/badge/HTML-<important>.svg)
 ![Generic badge](https://img.shields.io/badge/CSS-<informational>.svg)
 ![Generic badge](https://img.shields.io/badge/JavaScript-<informational>.svg)
